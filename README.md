@@ -8,17 +8,17 @@ authentication. MemCacheStore uses memcache-client and it doesnt provide authent
 
 ## Installation
  
- gem install memcached_session_store
+  gem install memcached_session_store
  
 ## Usage
 
 In config/enviroment.rb:
-  config.gem "memcached"
-  config.gem "memcached_session_store"
+    config.gem "memcached"
+    config.gem "memcached_session_store"
   
 In the session_store initializer:
-  require "memcached_session_store"
-  ActionController::Base.session_store = :memcached_session_store
+    require "memcached_session_store"
+    ActionController::Base.session_store = :memcached_session_store
 
 ## License
 
