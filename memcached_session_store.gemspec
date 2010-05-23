@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{memcached_session_store}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jaakko Suutarla"]
@@ -11,8 +11,8 @@ Gem::Specification.new do |s|
   s.description = %q{Storing Rails session with memcached while using Heroku memcache plugin.}
   s.email = %q{jaakko@suutarla.com}
   s.extra_rdoc_files = ["README.md", "lib/memcached_session_store.rb"]
-  s.files = ["README.md", "Rakefile", "lib/memcached_session_store.rb", "Manifest", "memcached_session_store.gemspec"]
-  s.homepage = %q{http://github.com/jaakkos/memcached_session_store}
+  s.files = ["Manifest", "README.md", "Rakefile", "lib/memcached_session_store.rb", "memcached_session_store.gemspec"]
+  s.homepage = %q{http://github.com/jaakkos/memcached_session_store_gem}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Memcached_session_store", "--main", "README.md"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{memcached_session_store}

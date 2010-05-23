@@ -5,20 +5,13 @@ module ActionController
     class MemcachedSessionStore < AbstractStore
       def initialize(app, options = {})
         
-        # Support old :expires option
         options[:expire_after] ||= options[:expires]
-
         super
 
-        @default_options = {
-          :namespace => 'rack:session',
-          :memcache_server => 'localhost:11211'
-        }.merge(@default_options)
-
-        @pool = options[:cache] || Memcached::Rails.new(@default_options[:memcache_server], @default_options)
+        @pool =  options[:cache] || Memcached::Rails.new()
         
         begin
-        @pool.stats
+          @pool.stats
         rescue Memcached::SomeErrorsWereReported
           raise "#{self} unable to find server during initialization."
         end

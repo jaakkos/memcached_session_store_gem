@@ -1,4 +1,5 @@
+Manifest
 README.md
 Rakefile
 lib/memcached_session_store.rb
-Manifest
+memcached_session_store.gemspec
